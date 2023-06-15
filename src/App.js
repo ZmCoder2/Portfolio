@@ -1,5 +1,5 @@
 // import React, {useState} from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 // import Loader from 'react-loaders'
 // import AnimatedCharacters from './components/AnimatedCharacters'
 import Layout from './components/Layout'
@@ -13,7 +13,7 @@ import './App.scss';
 function App() {
 
   return (
-    <>
+    <HashRouter basename='/portfolio'>
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Route>
       </Routes>
-    </>
+    </HashRouter>
   );
 }
 
