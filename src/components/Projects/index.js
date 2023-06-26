@@ -13,7 +13,7 @@ const Projects = () => {
         <>
             <div className="conatainer projects-page">
                 <div className="text-zone">
-                    <h1>
+                    <h1 className="projects-title">
                         <AnimatedCharacters
                             characterClass={characterClass}
                             characterArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
@@ -22,8 +22,18 @@ const Projects = () => {
                     </h1>
                     {projects.length ? projects.map((proj) => (
                         <div className='card'>
-                            <image src={proj.image} alt={proj.name} className="projImg" />
-                            <h1>{proj.name}</h1>
+                            <h1 className= 'project-name'>{proj.name}</h1>
+                            {proj.video ? (
+                                <iframe
+                                    src={proj.video.replace("/view?usp=sharing", "/preview")}
+                                    title={proj.name}
+                                    className="projVideo"
+                                    allow="autoplay"
+                                    allowFullScreen
+                                />
+                            ) : (
+                                <img src={proj.image} alt={proj.name} className="projImg" />
+                            )}
                             <p>{proj.description}</p>
                             <div>
                                 <button><a href={proj.github}>Repo</a></button>
@@ -31,7 +41,10 @@ const Projects = () => {
                             </div>
                         </div>
                     )) : null}
-                    </div>
+
+
+
+                </div>
             </div>
             <Loader type="cube-transition" />
         </>
