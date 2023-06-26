@@ -13,7 +13,7 @@ import './App.scss';
 function App() {
 
   return (
-    <HashRouter basename='/portfolio'>
+    <HashRouter basename='/'>
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
