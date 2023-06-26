@@ -45,7 +45,7 @@
     .text-zone {
       position: absolute;
       left: 10%;
-      top: 50%;
+      top: 20%;
       transform: translateY(-50%);
       width: 35%;
       vertical-align: middle;
@@ -85,7 +85,16 @@
           opacity: 0.6;
         }
       }
-  
+      h2 {
+        font-size: 45px;
+        font-family: "Lucida Console", Courier, monospace;
+        color: #3a3a3a;
+        font-weight: bold;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 13px;
+      }
       p {
         font-size: 14px;
         color: #fff;

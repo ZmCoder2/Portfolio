@@ -22,7 +22,7 @@ const Projects = () => {
                     </h1>
                     {projects.length ? projects.map((proj) => (
                         <div className='card'>
-                            <h1 className= 'project-name'>{proj.name}</h1>
+                            <h2 className= 'project-name'>{proj.name}</h2>
                             {proj.video ? (
                                 <iframe
                                     src={proj.video.replace("/view?usp=sharing", "/preview")}

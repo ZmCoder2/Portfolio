@@ -16,7 +16,7 @@
     {
         "name": "Social Network API",
         "video": "https://drive.google.com/file/d/1R2r-PxLQ7gS7JN4cQpChCUggDXIwJyLS/view?usp=sharing",
-        "description": "This is a and API for a social network that uses a NoSQL database. So a user's wesite can handle large mamounts of unstructured data.",
+        "description": "This is a and API for a social network that uses a NoSQL database. So a user's website can handle large amounts of unstructured data.",
         "github": "https://github.com/ZmCoder2/social-network-api",
         "live": "https://drive.google.com/file/d/1-YL3hZm5Ky0CwpVxWOVsw8D5Rs4k_ZNU/view"
     }
