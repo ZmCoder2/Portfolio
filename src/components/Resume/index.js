@@ -9,7 +9,7 @@ const Resume = () => {
     // , setCharacterClass
     return (
         <>
-            <div className="conatainer projects-page">
+            <div className="conatainer resume-page">
                 <div className="text-zone">
                     <h1>
                         <AnimatedCharacters
@@ -18,7 +18,7 @@ const Resume = () => {
                             index={15}
                         />
                     </h1>
-                    
+                    {}
                     </div>
                     </div>
                     <Loader type="cube-transition" />
