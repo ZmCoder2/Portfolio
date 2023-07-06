@@ -1,5 +1,11 @@
 .home-page {
-
+    img {
+        position: absolute;
+        left: 600px;
+        border-radius: 25%;
+        border-color: #333;
+        border-style: solid;
+    }
     .text-zone {
         position: absolute;
         left: 10%;

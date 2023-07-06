@@ -5,6 +5,7 @@ import Loader from 'react-loaders'
 // import Logo from './Logo'
 import AnimatedCharacters from '../AnimatedCharacters';
 import './index.scss'
+import selfiePic from '../../assets/selfie.jpeg'
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
     return (
         <>
         <div className="container home-page">
+            <img src={selfiePic}></img>
             <div className="text-zone">
                 <h1>
                     <span className={characterClass}>H</span>
